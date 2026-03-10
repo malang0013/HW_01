@@ -9,7 +9,7 @@ arr2 = list(map(int,input().split()))
 for i in range(N):
     min = i
     for j in range(i+1, N):
-        if arr1[j] < arr1[min]:
+        if (arr1[j] < arr1[min]):
             min = j
             arr1[i], arr1[min] = arr1[min], arr1[i]
 
@@ -17,7 +17,7 @@ for i in range(N):
 for i in range(N):
     max = i
     for j in range(i+1, N):
-        if arr2[j] > arr2[max]:
+        if (arr2[j] > arr2[max]):
             max = j
             arr2[i], arr2[max] = arr2[max], arr2[i]
 
